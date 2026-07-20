@@ -1,364 +1,392 @@
-    @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-    }
-    body{
-        background-color: #501122;
-        font-family: "Almendra", serif; 
-        cursor: url('#'), pointer;
-    }
-    header{
-        display: flex;
-        align-items:center ;
-        justify-content: center;
-        width: 100%;
-        background-color: rgb(33, 33, 33);
-        filter: drop-shadow(15px);
-        z-index: 9999;
-    }
-    nav a{
-        color:rgb(255, 240, 240);
-        font-weight: 550;
-        font-size: small;
-        text-decoration: none;
-        margin-left: 45px;
-        margin-right: 45px;
-        transition: 0.3s ease;
-    }
-    nav a:hover{
-        color: #883d39;
-    }
-    .logo img{
-        height: 45px;
-        width: 45px;
-    }
-    .containerM{
-        border: 1px solid white;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        height: auto;
-    }
-    .animationH{
-        bottom: 0;
-        top: 0;
-        left: 0;
-        height: 550px;
-        width: 100%;
-        position: absolute;
-        z-index: -9999;
-    }
-    .nameSpan{
-        font-size: 50px;
-        color: rgb(95, 95, 95);
-    }
-    .nameSpan1{
-        font-size: 90px;
-        color: antiquewhite;
-        animation-name: portfolioAnimation;
-        animation-duration: 8s;
-    }
-    @keyframes portfolioAnimation {
-        from {color: rgb(255, 255, 255);}
-        to {color: rgb(136, 0, 0);}
-    }
-    .projects{
-        background-color: aquamarine;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .imgProjects {
-        background-color: #6c1c31;
-        position: relative;
-        width: 80%;
-        height: 500px;
-        margin-left: 10%;
-    }  
-    .imgMain{
-        width: 80%;
-        height: 500px;
-        margin-left: 10%;
-        margin-top: 10px;
-        object-fit: contain;
-        display: block;
-    }
-    .projectsTitle p{
-        color: #282F42;
-        font-size: 35px;
-        display: flex;
-        align-items: center;
-        margin-left: 60px;
-        margin-top: 30px;
-    }
-    .house1, .house2, .house3, .house4 {
-        position: absolute;
-        z-index: 990;
-    }
-    .house1{
-        top: 18%;
-        left: 15%;
-    }
-    .house1img{
-        width: 75px;
-        height: 90px;
-    }
-    .house2 {
-        top: 25%;
-        left: 58%;
-    }
-    .house2img{
-        width: 75px;
-        height: 90px;
-    }
-    .house3 {
-        top: 55%;
-        left: 60%;
-    }
-    .house3img{
-        width: 75px;
-        height: 90px;
-    }
-    .house4 {
-        top: 55%;
-        left: 30%;
-    }
-    .house4img{
-        width: 75px;
-        height: 90px;
-    }
-    .titleHome{
-        display: flex;
-        align-items:center ;
-        justify-content: center;
-        flex-direction: column;
-        padding: 127px;
-    }
-    .aboutMe{
-        background-color: #6c1c31;
-        display: flex;
-        align-items: center;
-    }
-    .imgLeft{
-        background-color: #883d39;
-        width: 70%;
-        margin: 0;
-        padding: 0;
-    }
-    .imgLeft img{
-        width: 100%;
-        height: 500px;
-    }
-    .leftText{
-        background-color: #282F42;
-        padding: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        flex-direction: column;
-        height: 400px;
-    }
-    h1{
-        color: azure;
-    }
-    h2{
-        color: #797878;
-    }
-    .abili1{
-        display: flex;
-        justify-content: baseline;
-        align-items: center;
-        border-bottom: 1px solid black;
-        width: 100%;
-    }
-    .btn0{
-        width: 20px;
-        height: 20px;
-        margin-left: 29px;
-        background-color: transparent;
-        border: none;
-        color: #952913;
-        transition: 0.3s;
-    }
-    .btn0:hover{
-        color: antiquewhite;
-    }
-    .btn1 {
-        width: 20px;
-        height: 20px;
-        margin-left: 25px;
-        background-color: transparent;
-        border: none;
-        color: #952913;
-        transition: 0.3s;
-    }
-    .btn1:hover{
-        color: antiquewhite;
-    }
-    .btn2 {
-        width: 20px;
-        height: 20px;
-        margin-left: 117px;
-        background-color: transparent;
-        border: none;
-        color: #952913;
-        transition: 0.3s;
-    }
-    .btn2:hover{
-        color: antiquewhite;
-    }
-    .btn3{
-        width: 20px;
-        height: 20px;
-        margin-left: 225px;
-        background-color: transparent;
-        border: none;
-        color: #952913;
-        transition: 0.3s;
-    }
-    .btn3:hover{
-        color: antiquewhite;
-    }
-    .btn4{
-        width: 20px;
-        height: 20px;
-        margin-left: 140px;
-        background-color: transparent;
-        border: none;
-        color: #952913;
-        transition: 0.3s;
-    }
-    .btn4:hover{
-        color: antiquewhite;
-    }
-    .btn5{
-        width: 20px;
-        height: 20px;
-        margin-left: 184px;
-        background-color: transparent;
-        border: none;
-        color: #952913;
-        transition: 0.3s;
-    }
-    .btn5:hover{
-        color: antiquewhite;
-    }
-    .leftContent{
-        background-color: aquamarine;
-        width: 40%;
-    }
-    .leftContent img{
-        height: 100%;
-        width: 100%;
-    }
-    .rightContent{
-        background-color: brown;
-        width: 60%;
-        display: flex;
-    }
-    .textContent{
-        background-color: darkgrey;
-        margin-top: 60px;
-        margin-left: 80px;
-        width: 400px;
-    }
-    .content{
-        background-color: darkblue;
-        display: flex;
-        height: 550px;
-        width: 100%;
-    }
-    .footer{
-        color: #762e2e;
-        background-color: #282F42;
-        height: 300px;
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-        padding: 50px;
-        display: flex;
-        gap: 80px;
-        border: 2px solid rgb(211, 96, 96);
-    }
-    .bottomLine{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-bottom: 1px solid white;  
-    }
-    .footerRight{
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .footerRight img{
-        height: 200px;
-        margin-bottom: 30px;
-    }
-    .footer p{
-        font-size: 25px;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #501122;
+    font-family: "Almendra", serif;
+    overflow-x: hidden;
+}
+h1 {
+    color: azure;
+}
+h2 {
+    color: #797878;
+}
 
-    .letter{
-        height:90px;
-        width: 90px;
-        margin-right: 20px;
-    }
-    .title{
-        display: flex;
-        align-items: baseline;
-        border-bottom: 1px solid white;
-        padding-bottom: 20px;
-        
-    }
-    .direita{
-        margin-right: 60px;
-    }
-    .contenido{
-        display: flex;
-    }
-    .img1About{
-        height: 400px;
-        width: 250px;
-        position: absolute;
-        z-index: 999;
-        margin-left: 70px;
-        margin-top: 45px;
-    }
-    .img2About{
-        height: 500px;
-        width: 400px;
-        position: relative;
-    }
-    .About{
-        margin-top: 100px;
-        padding: 60px;
-    }
-    .text{
-        margin-top: 20px;
-    }
-    .imga{
-        display: flex;
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    gap: 20px;
+    background-color: rgb(33, 33, 33);
+    filter: drop-shadow(15px);
+    z-index: 9999;
+    position: sticky;
+}
+.navMenu{
+    display: flex;
+    gap: 20px;
+}
+.navMenu a {
+    color: rgb(255, 240, 240);
+    font-weight: 550;
+    font-size: small;
+    text-decoration: none;
+    margin-left: 45px;
+    margin-right: 45px;
+    transition: 0.3s ease;
+}
+.navMenu a:hover {
+    color: #883d39;
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+}
+
+
+.lineContainer {
+    position: relative;
+    border: 1px solid white;
+    margin: 20px;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.animationHero {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.titleHero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px;
+}
+.nameSpan1 {
+    font-size: 90px;
+    color: antiquewhite;
+    animation-name: portfolioAnimation;
+    animation-duration: 8s;
+}
+.nameSpan2 {
+    font-size: 50px;
+    color: rgb(95, 95, 95);
+}
+@keyframes portfolioAnimation {
+    from { color: rgb(255, 255, 255); }
+    to { color: rgb(136, 0, 0); }
+}
+
+
+.about {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+.aboutText {
+    flex: 1.2;
+}
+.aboutTitle {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.letter {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.aboutTitle h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.aboutDesc p {
+    color: #f0f0f0;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+.aboutDescImages {
+    display: flex;
+    gap: 20px;
+}
+.imga1{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+}
+.imga2 {
+    width: 400px;
+    height: 180px;
+    object-fit: cover;
+}
+.aboutImages {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlayImages {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+}
+.img2About {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.img1About {
+    width: 75%;  
+    height: 75%;            
+    object-fit: cover;
+    position: relative;
+    z-index: 2;              
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+}
+.imgDivisor {
+    width: 100%;
+    height: 30px;
+    object-fit: cover;
+    display: block;
+    margin-top: 40px;
+}
+
+
+.skills {
+    padding: 60px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skillInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.skillInfo img {
+    height: 100px;
+}
+
+
+
+.projects {
+    background-color: aquamarine;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.projectsTitle p {
+    color: #282F42;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.imgProjects {
+    background-color: #6c1c31;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+}
+.imgMain {
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 10px;
+    object-fit: contain;
+    display: block;
+}
+.house1, .house2, .house3, .house4 {
+    position: absolute;
+    z-index: 990;
+}
+.house1 {
+    top: 18%;
+    left: 15%;
+}
+.house2 {
+    top: 25%;
+    left: 58%;
+}
+.house3 {
+    top: 55%;
+    left: 60%;
+}
+.house4 {
+    top: 55%;
+    left: 30%;
+}
+.house1img, .house2img, .house3img, .house4img {
+    width: 75px;
+    height: 90px;
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+.gallery-item {
+  position: relative;
+  width: calc(25% - 20px);
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+.modal {
+  margin-top: 50px;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 92%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+.modal-content {
+  position: relative;
+  width: 90%;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: zoomIn 0.5s;
+}
+@keyframes zoomIn {
+  from {transform: scale(0.6);}
+  to {transform: scale(1);}
+}
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.caption {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .gallery-item {
+     width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery-item  {
+    width: calc(100% - 20px);
+  }
+}
+@media (max-width: 768px) {
+    .galleryCont {
+        grid-template-columns: 1fr;
     }
-    .imga1{
-        margin-top: 15px;
-        height: 250px;
-        margin-right: 100px;
-    }
-    .imga2{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        height: 200px;
-        width: 100%;
-    }
-    .imgDivS{
-        width: 100%;
-        height: 34px;
-    }
+}
+
+
+
+.footer {
+    color: #762e2e;
+    background-color: #282F42;
+    height: 300px;
+    margin: 5%;
+    padding: 50px;
+    display: flex;
+    gap: 80px;
+    border: 2px solid rgb(211, 96, 96);
+}
+
+.footerCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.footerLogo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLogo img {
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    font-size: 25px;
+}
