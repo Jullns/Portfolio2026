@@ -20,7 +20,7 @@ h2 {
     color: #797878;
 }
 
-
+/*Headder*/
 .header {
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ h2 {
     top: 0;
     gap: 20px;
     background-color: rgb(33, 33, 33);
-    filter: drop-shadow(15px);
+    filter: drop-shadow(21px);
     z-index: 9999;
     position: sticky;
 }
@@ -49,15 +49,13 @@ h2 {
 .navMenu a:hover {
     color: #883d39;
 }
-
 .logo img {
-    height: 45px;
-    width: 45px;
+    height: 46px;
+    width: 46px;
 }
 
-
+/*Hero*/
 .lineContainer {
-    position: relative;
     border: 1px solid white;
     margin: 20px;
     min-height: 460px;
@@ -66,8 +64,6 @@ h2 {
     justify-content: center;
     overflow: hidden;
 }
-
-
 .animationHero {
     top: 0;
     left: 0;
@@ -99,21 +95,23 @@ h2 {
     to { color: rgb(136, 0, 0); }
 }
 
-
+/*About me section*/
 .about {
     padding: 60px 40px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
-
 .aboutContainer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
+    width: 100%;
 }
 .aboutText {
     flex: 1.2;
+    min-width: 0;
 }
 .aboutTitle {
     display: flex;
@@ -142,13 +140,16 @@ h2 {
 .aboutDescImages {
     display: flex;
     gap: 20px;
+    width: 100%;
 }
 .imga1{
+    flex: 1;
     width: 200px;
     height: 180px;
     object-fit: cover;
 }
 .imga2 {
+    flex: 2;
     width: 400px;
     height: 180px;
     object-fit: cover;
@@ -158,10 +159,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    min-width: 0;
 }
 .overlayImages {
     position: relative;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 450px;
     display: flex;
     align-items: center;    
@@ -195,6 +199,7 @@ h2 {
 
 .skills {
     padding: 60px 20px;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: center;
 }
@@ -209,21 +214,27 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    width: 100%;
 }
 .skillInfo img {
     height: 100px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.skillInfo img:hover {
+    transform: translateY(-5px);
 }
 
 
-
 .projects {
-    background-color: aquamarine;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 .projectsTitle p {
-    color: #282F42;
+    color: #ebeef4;
     font-size: 35px;
     display: flex;
     align-items: center;
@@ -231,7 +242,6 @@ h2 {
     margin-top: 30px;
 }
 .imgProjects {
-    background-color: #6c1c31;
     position: relative;
     width: 80%;
     height: 500px;
@@ -276,7 +286,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 0 15px;
+  padding: 15px 20px;
+  margin-top: 15px;
 }
 .gallery-item {
   position: relative;
@@ -334,25 +345,8 @@ h2 {
 .caption {
   position: absolute;
   bottom: 15px;
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-  font-size: 24px;
-}
-@media screen and (max-width: 768px) {
-  .gallery-item {
-     width: calc(50% - 20px);
-  }
-}
-@media screen and (max-width: 480px) {
-  .gallery-item  {
-    width: calc(100% - 20px);
-  }
-}
-@media (max-width: 768px) {
-    .galleryCont {
-        grid-template-columns: 1fr;
-    }
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 
@@ -360,7 +354,6 @@ h2 {
 .footer {
     color: #762e2e;
     background-color: #282F42;
-    height: 300px;
     margin: 5%;
     padding: 50px;
     display: flex;
@@ -371,22 +364,117 @@ h2 {
 .footerCont {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid white;
-}
-
-.footerLogo {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .footerLogo img {
     height: 200px;
     margin-bottom: 30px;
+    width: auto;
 }
 
 .footer p {
     font-size: 25px;
+}
+
+@media (max-width: 850px) {
+    .header {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .navMenu a {
+        margin: 0 5px;
+        font-size: 0.85rem;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about {
+        padding: 60px 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .aboutDescImages {
+        flex-direction: column;
+    }
+
+    .imga1, .imga2 {
+        width: 100%;
+        height: 160px;
+    }
+
+    .overlayImages {
+        height: 350px;
+        margin-top: 20px;
+    }
+    .skillsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+    
+    .skillInfo img {
+        height: 75px;
+    }
+
+    .skillInfo h2 {
+        font-size: 1.1rem;
+    }
+    .footerCont {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-item {
+     width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery-item  {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+    .galleryCont {
+        grid-template-columns: 1fr;
+    }
+    .modal {
+        margin-top: 50px;
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 95%;
+        background-color: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease;
+    }
+    .projects{
+        margin: 0;
+    }
+    .imgMain {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        object-fit: contain;
+        display: block;
+    }
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
